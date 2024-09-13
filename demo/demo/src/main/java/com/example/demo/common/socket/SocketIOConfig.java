@@ -2,6 +2,7 @@ package com.example.demo.common.socket;
 
 import com.corundumstudio.socketio.SocketIOServer;
 import com.corundumstudio.socketio.Transport;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -14,7 +15,7 @@ import java.util.Arrays;
 public class SocketIOConfig {
 
     private static final String HOST_NAME = "0.0.0.0";
-    private static final int PORT = 8082;
+    private static final int PORT = 8081;
 
     /**
      * Tomcat 서버와 별도로 돌아가는 netty 서버를 생성
